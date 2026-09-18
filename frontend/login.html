@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | JobNest</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body class="auth-page">
+  <a class="logo auth-logo" href="index.html">Job<span>Nest</span></a>
+  <div class="auth-card">
+    <div class="auth-heading">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Sign in</h1>
+      <p>Access your saved jobs and applications.</p>
+    </div>
+    <form id="loginForm">
+      <label>Email
+        <input id="loginEmail" type="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input id="loginPassword" type="password" required minlength="6" placeholder="••••••••">
+      </label>
+      <button class="btn btn-primary full" type="submit">Sign in</button>
+    </form>
+    <p class="auth-footer">Don't have an account? <a href="register.html">Create one</a></p>
+  </div>
+<script src="script/auth.js"></script>
+</body>
+</html>

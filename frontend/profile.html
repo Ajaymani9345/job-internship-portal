@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | JobNest</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">Job<span>Nest</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a class="active" href="profile.html">Profile</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-outline" id="logoutBtn">Logout</button>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+  <main class="container page">
+    <div class="page-title">
+      <p class="eyebrow">YOUR PROFILE</p>
+      <h1>Student profile</h1>
+      <p>Keep your career information ready for applications.</p>
+    </div>
+    <form id="profileForm" class="profile-form">
+      <div class="form-grid">
+        <label>Full name
+          <input id="profileName" required>
+        </label>
+        <label>Email
+          <input id="profileEmail" type="email" required>
+        </label>
+        <label>College / University
+          <input id="profileCollege">
+        </label>
+        <label>Phone
+          <input id="profilePhone" type="tel">
+        </label>
+        <label>Location
+          <input id="profileLocation">
+        </label>
+        <label>Graduation year
+          <input id="profileYear" type="number" min="2020" max="2035">
+        </label>
+      </div>
+      <label>Skills
+        <input id="profileSkills" placeholder="HTML, CSS, JavaScript, AWS">
+      </label>
+      <label>About you
+        <textarea id="profileAbout" rows="5" placeholder="Write a short introduction..."></textarea>
+      </label>
+      <button class="btn btn-primary" type="submit">Save profile</button>
+    </form>
+  </main>
+  <footer>
+    <div class="container footer-inner"><b>JobNest</b><span>© 2026 JobNest</span></div>
+  </footer>
+  <script src="script/main.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>initProfile());</script>
+</body>
+</html>

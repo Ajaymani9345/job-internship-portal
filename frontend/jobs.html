@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs | JobNest</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+<header class="navbar"><a class="logo" href="index.html">Job<span>Nest</span></a><nav><a href="index.html">Home</a><a class="active" href="jobs.html">Jobs</a><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a></nav><div class="nav-actions"><a class="btn btn-outline" href="login.html">Login</a><a class="btn btn-primary" href="register.html">Register</a></div><button class="menu-btn" id="menuBtn">☰</button></header>
+<main class="container page">
+  <div class="page-title">
+  <p class="eyebrow">OPPORTUNITIES</p>
+  <h1>Find your next opportunity</h1>
+  <p>Search jobs and internships by title, location, type and skills.</p>
+  </div>
+  <div class="filter-panel">
+    <input id="jobSearch" type="search" placeholder="Search title, skill or company">
+    <input id="locationFilter" type="text" placeholder="Location">
+    <select id="typeFilter"><option value="">All types</option><option>Internship</option><option>Full Time</option><option>Part Time</option></select>
+    <select id="categoryFilter"><option value="">All categories</option><option>Frontend</option><option>Backend</option><option>Cloud</option><option>Data</option><option>Design</option></select>
+    <button class="btn btn-primary" id="clearFilters">Clear</button>
+  </div>
+  <div class="results-row"><b id="resultCount">0 jobs</b><span>Updated regularly</span></div>
+  <div class="job-grid" id="jobList"></div>
+  <div id="emptyState" class="empty hidden"><div>🔎</div><h3>No matching opportunities</h3><p>Try a different keyword or remove a filter.</p></div>
+</main>
+<footer><div class="container footer-inner"><b>JobNest</b><span>© 2026 JobNest</span></div></footer>
+<script src="script/jobs.js"></script>
+</body>
+</html>

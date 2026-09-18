@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | JobNest</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body class="auth-page">
+  <a class="logo auth-logo" href="index.html">Job<span>Nest</span></a>
+  <div class="auth-card">
+    <div class="auth-heading">
+      <p class="eyebrow">GET STARTED</p>
+      <h1>Create your profile</h1>
+      <p>Start discovering jobs and internships.</p>
+    </div>
+    <form id="registerForm">
+      <label>Full name
+        <input id="regName" required placeholder="Your name">
+      </label>
+      <label>Email
+        <input id="regEmail" type="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input id="regPassword" type="password" minlength="6" required placeholder="At least 6 characters">
+      </label>
+      <label>College / University
+        <input id="regCollege" placeholder="Your college">
+      </label>
+      <button class="btn btn-primary full" type="submit">Create account</button>
+    </form>
+    <p class="auth-footer">Already registered? <a href="login.html">Sign in</a></p>
+  </div>
+  <script src="script/auth.js"></script>
+</body>
+</html>

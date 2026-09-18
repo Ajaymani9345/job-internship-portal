@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | JobNest</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+<header class="navbar">
+<a class="logo" href="index.html">Job<span>Nest</span></a>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a class="active" href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+</nav>
+<div class="nav-actions">
+   <button class="btn btn-outline" id="logoutBtn">Logout</button>
+</div>
+   <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+<main class="container page">
+<div class="welcome">
+<div>
+   <p class="eyebrow">STUDENT DASHBOARD</p>
+<h1>Welcome, <span id="welcomeName">Student</span> 👋</h1>
+   <p>Track your career activity in one place.</p>
+</div>
+   <a class="btn btn-primary" href="jobs.html">Find jobs</a>
+</div>
+<div class="stats-grid">
+<div class="stat-card">
+<span>Applications</span>
+<strong id="applicationCount">0</strong>
+</div>
+<div class="stat-card">
+<span>Saved jobs</span>
+<strong id="savedCount">0</strong>
+</div>
+<div class="stat-card">
+<span>Profile completion</span>
+<strong>75%</strong>
+</div>
+<div class="stat-card">
+<span>Shortlisted</span>
+<strong id="shortlistedCount">0</strong>
+</div>
+</div>
+<section class="dashboard-section">
+<div class="section-heading">
+<div>
+<p class="eyebrow">ACTIVITY</p>
+<h2>Recent applications</h2>
+</div>
+<a href="applications.html">View all →</a>
+</div>
+<div id="recentApplications"></div>
+</section>
+<section class="dashboard-section">
+<div class="section-heading">
+<div>
+<p class="eyebrow">SAVED</p>
+<h2>Saved jobs</h2>
+</div>
+<a href="jobs.html">Find more →</a>
+</div>
+<div id="savedJobs" class="job-grid"></div>
+</main>
+<footer>
+<div class="container footer-inner">
+<b>JobNest</b>
+<span>© 2026 JobNest</span>
+</div>
+</footer>
+<script src="script/dashboard.js"></script>
+</body>
+</html>

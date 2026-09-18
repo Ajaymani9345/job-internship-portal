@@ -1,0 +1,257 @@
+/* Tablet */
+
+@media (max-width: 1100px) {
+    .navbar {
+        gap: 18px;
+    }
+
+    nav {
+        gap: 16px;
+        margin-left: 10px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-panel {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .filter-panel .btn {
+        grid-column: span 3;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr 300px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small tablet */
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0 4%;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-panel .btn {
+        grid-column: span 2;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .apply-card {
+        position: static;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta {
+        padding: 32px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 680px) {
+    .navbar {
+        height: 72px;
+        padding: 0 5%;
+        gap: 12px;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+        z-index: 200;
+    }
+
+    .navbar nav.open {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid,
+    .job-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .cta,
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta {
+        padding: 28px;
+    }
+
+    .cta h2 {
+        font-size: 25px;
+    }
+
+    .page {
+        padding: 40px 0 60px;
+    }
+
+    .page-title h1 {
+        font-size: 34px;
+    }
+
+    .filter-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-panel .btn {
+        grid-column: auto;
+    }
+
+    .detail-card,
+    .apply-card,
+    .profile-form {
+        padding: 22px;
+    }
+
+    .detail-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .detail-head h1 {
+        font-size: 28px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .application-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .app-main {
+        min-width: 0;
+    }
+
+    .footer-inner {
+        padding: 20px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .auth-card {
+        padding: 25px;
+    }
+
+    .auth-logo {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Very small mobile screens */
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .btn {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+
+    .job-card {
+        padding: 16px;
+    }
+
+    .category-card {
+        padding: 20px;
+    }
+}

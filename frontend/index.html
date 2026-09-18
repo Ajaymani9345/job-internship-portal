@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobNest | Find Jobs & Internships</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">Job<span>Nest</span></a>
+  <nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="btn btn-outline" href="login.html">Login</a>
+    <a class="btn btn-primary" href="register.html">Register</a>
+  </div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">YOUR CAREER STARTS HERE</p>
+    <h1>Find the right <span>job or internship</span> for your future.</h1>
+    <p class="hero-text">Discover opportunities from growing companies and build your career with confidence.</p>
+    <form class="search-box" id="homeSearch">
+      <input id="homeKeyword" type="text" placeholder="Job title, skill or company">
+      <input id="homeLocation" type="text" placeholder="Location">
+      <button class="btn btn-primary" type="submit">Search Jobs</button>
+    </form>
+    <div class="quick-tags">
+      <span>Popular:</span>
+      <button data-search="Frontend Developer">Frontend</button>
+      <button data-search="JavaScript">JavaScript</button>
+      <button data-search="Cloud">Cloud</button>
+      <button data-search="Data Analyst">Data</button>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-heading">
+    <div><p class="eyebrow">EXPLORE</p><h2>Popular categories</h2></div>
+    <a href="jobs.html">View all jobs →</a>
+  </div>
+  <div class="category-grid">
+    <button class="category-card" data-search="Frontend"><span>💻</span><b>Frontend Development</b><small>24 opportunities</small></button>
+    <button class="category-card" data-search="Backend"><span>⚙️</span><b>Backend Development</b><small>18 opportunities</small></button>
+    <button class="category-card" data-search="Cloud"><span>☁️</span><b>Cloud & DevOps</b><small>16 opportunities</small></button>
+    <button class="category-card" data-search="Data"><span>📊</span><b>Data & Analytics</b><small>21 opportunities</small></button>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-heading">
+    <div><p class="eyebrow">LATEST</p><h2>Featured opportunities</h2></div>
+    <a href="jobs.html">Browse all →</a>
+  </div>
+  <div class="job-grid" id="featuredJobs"></div>
+</section>
+
+<section class="cta container">
+  <div><p class="eyebrow">FOR STUDENTS</p><h2>Build your career one opportunity at a time.</h2><p>Create your profile, save jobs and track every application from one dashboard.</p></div>
+  <a class="btn btn-light" href="register.html">Create free profile</a>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><b>JobNest</b><span>© 2026 JobNest. Frontend portfolio project.</span><span>HTML • CSS • JavaScript • AWS S3 ready</span></div></footer>
+<script src="script/main.js"></script>
+</body>
+</html>
